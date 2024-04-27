@@ -5,9 +5,9 @@
 }
 
 .content {
-  width: 830px;
-  height: 100%;
-  padding: 62.91px 220px 152px 165px;
+  width: 57.638%;
+  height: inherit;
+  padding: 62.91px 0 152px 165px;
   background: url("/bg-pattern-desktop.svg") bottom left no-repeat,
     linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   display: flex;
@@ -56,7 +56,7 @@
 }
 
 .email {
-  width: 445px;
+  width: 100%;
   height: 56px;
   background: transparent;
   font-family: "Josefin Sans", sans-serif;
@@ -64,7 +64,7 @@
   font-weight: 400;
   color: var(--dark-grayish-red);
   line-height: 28px;
-  padding: 15px 132px 13px 32px;
+  padding: 15px 116px 13px 32px;
   outline: none;
   border: 1px solid var(--desaturated-red);
   border-radius: 28px;
@@ -103,7 +103,7 @@
   top: 0;
   right: 0;
   width: 100px;
-  height: 56px;
+  height: 100%;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   display: flex;
   justify-content: center;
@@ -123,6 +123,126 @@
 }
 
 .image {
-  width: 610px;
-  height: 100%;
+  width: 42.361%;
+  height: 800px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    width: 52.638%;
+    padding: 62.91px 0 152px 100px;
+  }
+
+  .image {
+    width: 47.361%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .content {
+    padding: 62.91px 0 152px 65px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .container {
+    width: 500px;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 150px 30px;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    gap: 346px;
+  }
+
+  .title,
+  .description {
+    text-align: center;
+  }
+
+  .image {
+    content: url("/hero-mobile.jpg");
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 125px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    padding: 31px 32px 92px;
+    gap: 336px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 20.89px;
+  }
+
+  .text {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 10.83px;
+  }
+
+  .description {
+    margin: 16px 0 32px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .register {
+    width: 311px;
+    height: 48px;
+  }
+
+  .email {
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    padding: 11px 76px 9px 24px;
+  }
+
+  .error {
+    padding: 10px 75px 8px 23px;
+  }
+
+  .error-image {
+    top: 11px;
+    right: 72px;
+  }
+
+  .error-text {
+    bottom: -28px;
+    left: 24px;
+  }
+
+  .send {
+    width: 64px;
+    height: 100%;
+  }
+
+  .image {
+    top: 84px;
+  }
 }
