@@ -75,6 +75,29 @@
   opacity: 0.5;
 }
 
+.error {
+  padding: 14px 131px 12px 31px;
+  border: 2px solid var(--soft-red);
+}
+
+.error-image {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 17px;
+  right: 116px;
+}
+
+.error-text {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--soft-red);
+  line-height: 28px;
+  position: absolute;
+  bottom: -32px;
+  left: 32px;
+}
+
 .send {
   position: absolute;
   top: 0;
